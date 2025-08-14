@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-REPO_URL="https://github.com/danilnagy/obp-scraper.git"
+REPO_URL="https://github.com/oneblueplanetapp/obp-scraper.git"
 APP_DIR="/home/ubuntu/obp-scraper"
 
 echo "Installing dependencies..."
