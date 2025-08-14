@@ -2,23 +2,23 @@
 
 https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:
 
-click "Launch instances"
+1. click "Launch instances"
 
-name: obp-scraper
-imagem ubuntu
-key?
-Allow HTTPS traffic from the internet: yes
-Allow HTTP traffic from the internet: yes
-click "Launch instance"
+- name: obp-scraper
+- image: ubuntu
+- Allow HTTPS traffic from the internet: yes
+- Allow HTTP traffic from the internet: yes
 
-click on instance
+2. click "Launch instance". If prompted, select "Proceed without key pair"
 
-log into instance
+3. click on instance
+
+4. log into instance
 
 - Connect, Connect
 
 ```
-wget https://raw.githubusercontent.com/danilnagy/obp-scraper/main/setup.sh
+wget https://raw.githubusercontent.com/oneblueplanetapp/obp-scraper/main/setup.sh
 chmod +x setup.sh
 ./setup.sh
 pm2 logs scrape-api
@@ -35,7 +35,7 @@ Port range: 3232
 Source: 0.0.0.0/0 (or your IP only for security)
 ```
 
-go to intance
+go to instance
 get public IP address: Public IPv4 address
 
 got to http://<PUBLIC_IP>:3232/
